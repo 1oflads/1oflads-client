@@ -1,0 +1,21 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
+}
+
+.main-container {
+  padding: 1em 2em;
+}
+.main-container h1 {
+  color: var(--main);
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 18em);
+  column-gap: 1em;
+}
+
+/*# sourceMappingURL=project-details.component.css.map */

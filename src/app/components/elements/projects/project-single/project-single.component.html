@@ -1,0 +1,8 @@
+<div class="main-container" [style.background-image]="getBackground()">
+  <h1>{{project.title}}</h1>
+  <p *ngIf="project.resume !== ''">{{project.resume}}</p>
+  <p class="line"></p>
+  <button class="color-button" [routerLink]="['/project', project.id]">
+    Виж още
+  </button>
+</div>

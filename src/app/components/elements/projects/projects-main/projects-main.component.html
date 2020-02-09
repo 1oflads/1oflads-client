@@ -1,0 +1,8 @@
+<div class="main-container">
+  <h1>Проекти</h1>
+  <lads-info-carousel [config]="configurationService.challengeCarouselConfiguration()">
+    <div #container class="slide" *ngFor="let project of projects">
+      <lads-project-single [project]="project"></lads-project-single>
+    </div>
+  </lads-info-carousel>
+</div>

@@ -1,0 +1,40 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
+}
+
+.main-container {
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 8px;
+  width: 98%;
+  height: 18em;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border: 1px solid var(--main);
+  color: var(--main);
+}
+
+h1 {
+  color: #000000;
+}
+
+.line {
+  width: 10%;
+  height: 0.5px;
+  background-color: #000000;
+  margin: 0.5em auto;
+}
+
+h3 {
+  margin-bottom: 1em;
+}
+
+:host ::ng-deep ul, :host ::ng-deep ol {
+  margin-left: 1em;
+}
+
+/*# sourceMappingURL=project-single.component.css.map */

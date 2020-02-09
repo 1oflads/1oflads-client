@@ -2,13 +2,15 @@ body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
 }
 
 .article {
   height: 12em;
-  background-color: #666767;
+  background-color: #4C4D4D;
   border-radius: 8px;
   margin: 0.5em;
+  border: 1px solid var(--main);
 }
 .article .image {
   height: 75%;

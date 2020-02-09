@@ -1,0 +1,35 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
+}
+
+.band {
+  height: 12em;
+  background-color: #4C4D4D;
+  border-radius: 8px;
+  margin: 0.5em;
+  border: 1px solid var(--main);
+}
+.band .image {
+  height: 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-bottom: 0.5px solid #000000;
+}
+.band .text {
+  text-align: center;
+}
+.band .text h5 {
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: var(--main);
+  text-shadow: 0px 0px 3px #000000;
+}
+
+/*# sourceMappingURL=band-card.component.css.map */

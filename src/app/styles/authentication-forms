@@ -26,6 +26,22 @@ input, textarea {
   &:focus {
     border: 1px solid $mainColor;
   }
+
+  &.ng-dirty {
+    &:invalid {
+      background-color: #FCB0B7;
+    }
+  }
+
+  &.ng-touched {
+    &:invalid {
+      background-color: #FCB0B7;
+
+      &:focus {
+        background-color: #FCB0B7;
+      }
+    }
+  }
 }
 
 textarea {
@@ -60,4 +76,18 @@ a {
     width: unset;
     margin-left: 1em;
   }
+}
+
+.checkbox {
+  width: unset;
+  margin-left: 1em;
+}
+
+.error {
+  font-weight: bold;
+  color: #F81228;
+}
+
+.hidden {
+  display: none;
 }

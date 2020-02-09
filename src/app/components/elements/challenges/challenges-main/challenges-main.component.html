@@ -1,5 +1,15 @@
-<lads-info-carousel [config]="configurationService.challengeCarouselConfiguration()">
-  <div #container class="slide" *ngFor="let challenge of challenges">
-    <lads-challenge-single [challenge]="challenge"></lads-challenge-single>
-  </div>
-</lads-info-carousel>
+<div class="main-container" *ngIf="topUsers">
+  <h1>Предизвикателства</h1>
+  <lads-info-carousel [config]="configurationService.challengeCarouselConfiguration()">
+    <div #container class="slide" *ngFor="let challenge of challenges">
+      <lads-challenge-single [challenge]="challenge"></lads-challenge-single>
+    </div>
+  </lads-info-carousel>
+  <a href="#" class="see-all">Виж всички</a>
+  <a routerLink="/user/rating">
+    <div *ngIf="topUsers">
+      <h4>Временно класиране</h4>
+      <lads-user-top-three [topUsers]="topUsers"></lads-user-top-three>
+    </div>
+  </a>
+</div>

@@ -1,14 +1,24 @@
 <div class="main-container">
   <h1>Редакция на профила</h1>
   <form (submit)="edit()">
-    <h2 *ngIf="roles.length">Група</h2>
-    <p *ngIf="roles.length">Имай предвид, че можеш да промениш групата си само веднъж годишно, но не можеш да продължиш в сайта ако не се
-      присъединиш към някоя</p>
+    <h2 *ngIf="roles.length">Роля</h2>
+    <p *ngIf="roles.length">За да продължиш, трябва да  избереш роля. Но избирай умно, защото ще можеш да я промениш чак след
+      година, а не можеш да продължиш, ако не избереш някоя. Така че, кой си ти?
+      че, кой си ти?</p>
     <div class="checkboxes">
       <label *ngFor="let role of roles" [style.color]="role.theme.mainColor">
         <input [value]="role.id" [(ngModel)]="model.roleId" name="role" class="checkbox" type="radio">
         {{role.name}}
       </label>
+    </div>
+    <div class="spheres">
+      <label *ngFor="let sphere of spheres">
+        <input type="checkbox" class="checkbox" (click)="toggleSphere(sphere.id)">
+        {{sphere.name}}
+      </label>
+    </div>
+    <div class="descriptions">
+
     </div>
     <h2>Информация</h2>
     <label>

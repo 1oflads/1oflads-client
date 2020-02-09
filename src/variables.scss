@@ -2,11 +2,13 @@ body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
 }
 
 $mainColor: var(--main);
 $mainColorHover: var(--dark);
 $mainColorLight: var(--light);
+$mainColorLightTransparent: var(--lightTransparent);
 
 $keleshMainColor: #FC8B01;
 $umnikMainColor: #5B72FE;

@@ -1,0 +1,17 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
+}
+
+.main-container {
+  text-align: center;
+  padding: 1em 0;
+}
+.main-container h1 {
+  color: var(--main);
+  text-shadow: 0px 0px 3px #000000;
+}
+
+/*# sourceMappingURL=bands-main.component.css.map */

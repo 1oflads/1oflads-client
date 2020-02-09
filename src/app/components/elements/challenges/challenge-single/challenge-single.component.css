@@ -2,14 +2,16 @@ body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
 }
 
 .main-container {
-  margin: 1.5em auto;
+  margin: 1em auto;
   padding: 1em;
   border-radius: 8px;
   width: 98%;
-  background-color: var(--light);
+  height: 18em;
+  background-color: var(--lightTransparent);
   text-align: center;
   border: 1px solid var(--main);
   color: var(--main);

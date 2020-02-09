@@ -19,6 +19,9 @@ import {UsersRatingComponent} from './components/user/users-rating/users-rating.
 import {AnonymousGuard} from './core/guards/AnonymousGuard';
 import {AuthenticationGuard} from './core/guards/AuthenticationGuard';
 import {AdminGuard} from './core/guards/AdminGuard';
+import {AboutUsComponent} from './components/common/about-us/about-us.component';
+import {ArticleDetailsComponent} from './components/elements/articles/article-details/article-details.component';
+import {ProjectDetailsComponent} from './components/elements/projects/project-details/project-details.component';
 
 
 const routes: Routes = [
@@ -35,10 +38,13 @@ const routes: Routes = [
   {path: 'challenge/achieve/:id', component: ChallengeAchieveComponent, canActivate: [AuthenticationGuard]},
   {path: 'challenge/requests', component: ChallengeRequestsMainComponent, canActivate: [AdminGuard]},
   {path: 'challenge/applications', component: ChallengeApplicationsMainComponent, canActivate: [AdminGuard]},
-  {path: 'band/create', component: BandCreateComponent, canActivate: [AdminGuard]},
-  {path: 'band/:id', component: BandPageComponent},
-  {path: 'band/:id/edit', component: BandPageEditComponent, canActivate: [AuthenticationGuard]},
-  {path: 'just-watching', component: JustWatchingComponent}
+  {path: 'group/create', component: BandCreateComponent, canActivate: [AdminGuard]},
+  {path: 'group/:id', component: BandPageComponent},
+  {path: 'group/:id/edit', component: BandPageEditComponent, canActivate: [AuthenticationGuard]},
+  {path: 'article/:id', component: ArticleDetailsComponent},
+  {path: 'project/:id', component: ProjectDetailsComponent},
+  {path: 'just-watching', component: JustWatchingComponent},
+  {path: 'about-us', component: AboutUsComponent}
 ];
 
 @NgModule({

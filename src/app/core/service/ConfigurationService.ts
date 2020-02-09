@@ -17,12 +17,14 @@ export class ConfigurationService {
     };
   }
 
-  bigCarouselConfiguration(): ICarousel {
+  bigCarouselConfiguration() {
     return {
       slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 1800,
       slidesToScroll: 1,
       dots: false,
-      infinite: false,
+      infinite: true,
       responsive:
         [
           {
@@ -71,11 +73,14 @@ export class ConfigurationService {
     };
   }
 
-  challengeCarouselConfiguration(): ICarousel {
+  challengeCarouselConfiguration() {
     return {
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       arrows: true,
+      autoplay: true,
+      infinite: true,
+      autoplaySpeed: 1800,
       responsive: [
         {
           breakpoint: 600,

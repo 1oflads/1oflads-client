@@ -26,4 +26,14 @@ export class Constants {
     public static THEME = 'theme';
     public static ADMIN = 'isAdmin';
   };
+  static Article = class {
+    public static PREFIX = 'articles';
+    public static PROJECTS = 'projects';
+  };
+  static Group = class {
+    public static PREFIX = 'groups';
+  };
+  static Sphere = class  {
+    public static PREFIX = 'spheres';
+  };
 }

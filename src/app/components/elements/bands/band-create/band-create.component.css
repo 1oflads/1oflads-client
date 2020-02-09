@@ -2,6 +2,7 @@ body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent:rgb(249, 226, 231, 0.3);
 }
 
 .main-container {
@@ -30,6 +31,18 @@ input, textarea {
 
 input:focus, textarea:focus {
   border: 1px solid var(--main);
+}
+
+input.ng-dirty:invalid, textarea.ng-dirty:invalid {
+  background-color: #FCB0B7;
+}
+
+input.ng-touched:invalid, textarea.ng-touched:invalid {
+  background-color: #FCB0B7;
+}
+
+input.ng-touched:invalid:focus, textarea.ng-touched:invalid:focus {
+  background-color: #FCB0B7;
 }
 
 textarea {
@@ -67,11 +80,26 @@ a:hover {
   margin-left: 1em;
 }
 
+.checkbox {
+  width: unset;
+  margin-left: 1em;
+}
+
+.error {
+  font-weight: bold;
+  color: #F81228;
+}
+
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=authentication-forms.css.map */
 body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
 }
 
 ng-multiselect-dropdown {

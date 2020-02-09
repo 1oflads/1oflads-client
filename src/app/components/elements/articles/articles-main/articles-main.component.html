@@ -1,22 +1,9 @@
 <div class="main-container">
+  <h1>Публикации</h1>
   <lads-info-carousel>
-    <div #container class="slide">
-      <lads-article-single></lads-article-single>
-    </div>
-    <div #container class="slide">
-      <lads-article-single></lads-article-single>
-    </div>
-    <div #container class="slide">
-      <lads-article-single></lads-article-single>
-    </div>
-    <div #container class="slide">
-      <lads-article-single></lads-article-single>
-    </div>
-    <div #container class="slide">
-      <lads-article-single></lads-article-single>
-    </div>
-    <div #container class="slide">
-      <lads-article-single></lads-article-single>
+    <div #container class="slide" *ngFor="let article of articles">
+      <lads-article-single [article]="article"></lads-article-single>
     </div>
   </lads-info-carousel>
+  <a href="#" class="see-all">Виж всички</a>
 </div>

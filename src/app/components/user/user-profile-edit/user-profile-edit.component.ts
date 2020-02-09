@@ -7,6 +7,8 @@ import {ToastrService} from 'ngx-toastr';
 import {RoleInfoViewModel} from '../../../core/service/models/user/RoleInfoViewModel';
 import {ThemeService} from '../../../core/service/ThemeService';
 import {Router} from '@angular/router';
+import {SphereService} from '../../../core/service/SphereService';
+import {SpherePreviewModel} from '../../../core/service/models/sphere/SpherePreviewModel';
 
 @Component({
   selector: 'lads-user-profile-edit',
@@ -16,11 +18,13 @@ import {Router} from '@angular/router';
 export class UserProfileEditComponent implements OnInit {
   public model: UserProfileEditRequest = new UserProfileEditRequest();
   public roles: RoleInfoViewModel[] = [];
+  private spheres: SpherePreviewModel[] = [];
 
   constructor(
     private userService: UserService,
     private authenticationService: AuthenticationService,
     private themeService: ThemeService,
+    private sphereService: SphereService,
     private toastrService: ToastrService,
     private router: Router
   ) {
@@ -34,6 +38,9 @@ export class UserProfileEditComponent implements OnInit {
 
     this.userService.roles()
       .subscribe(res => this.roles = res);
+
+    this.sphereService.findSpheres()
+      .subscribe(res => this.spheres = res);
   }
 
   edit() {
@@ -48,5 +55,13 @@ export class UserProfileEditComponent implements OnInit {
 
   fileChanged($event: Event | { target, files }) {
     this.model.avatar = $event.target.files[0];
+  }
+
+  toggleSphere(id: number) {
+    if (this.model.sphereIds.indexOf(id) === -1) {
+      this.model.sphereIds.push(id);
+    } else {
+      this.model.sphereIds.filter(sId => sId !== id);
+    }
   }
 }

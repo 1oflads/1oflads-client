@@ -1,0 +1,9 @@
+<div class="main-container">
+  <h1>Групи</h1>
+  <lads-info-carousel>
+    <div #container class="slide" *ngFor="let group of groups">
+      <lads-band-card [group]="group"></lads-band-card>
+    </div>
+  </lads-info-carousel>
+  <a href="#" class="see-all">Виж всички</a>
+</div>

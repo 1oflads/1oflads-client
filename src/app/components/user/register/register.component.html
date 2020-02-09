@@ -1,23 +1,35 @@
 <div class="main-container">
   <h1>Регистрация</h1>
-  <form (submit)="register()">
+  <form #registerForm="ngForm" (submit)="register()">
     <label>
       <i class="fas fa-envelope"></i>
-      <input [(ngModel)]="model.username" name="email" type="text" placeholder="Имейл адрес">
+      <input [(ngModel)]="model.username" name="email" type="text" placeholder="Имейл адрес" required
+             pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
     </label>
+    <span class="error" *ngIf="registerForm.controls.email?.touched && registerForm.controls.email.errors?.pattern">Невалиден имейл адрес</span>
+    <span class="error" *ngIf="registerForm.controls.email?.touched && registerForm.controls.email.errors?.required">Задължително поле</span>
+
     <label>
       <i class="fas fa-user-alt"></i>
-      <input [(ngModel)]="model.name" name="name" type="text" placeholder="Име">
+      <input [(ngModel)]="model.name" name="name" type="text" placeholder="Име" required>
     </label>
+    <span class="error"
+          *ngIf="registerForm.controls.name?.touched && registerForm.controls.name.errors?.required">Задължително поле</span>
+
     <label>
       <i class="fas fa-key"></i>
-      <input [(ngModel)]="model.password" name="password" type="password" placeholder="Парола">
+      <input [(ngModel)]="model.password" name="password" type="password" placeholder="Парола" required>
     </label>
+    <span class="error" *ngIf="registerForm.controls.password?.touched && registerForm.controls.password.errors?.required">Задължително поле</span>
+
     <label>
       <i class="fas fa-key"></i>
-      <input [(ngModel)]="model.confirm" name="confirm" type="password" placeholder="Повторете паролата">
+      <input [(ngModel)]="model.confirm" name="confirm" type="password" placeholder="Повторете паролата" required>
     </label>
-    <button type="submit" class="color-button">Регистрирай се</button>
+    <span class="error" *ngIf="registerForm.controls.password?.touched && registerForm.controls.password.errors?.required">Задължително поле</span>
+    <span class="error"
+          *ngIf="registerForm.controls.password?.value !== registerForm.controls.confirm?.value&& registerForm.controls.confirm?.value?.length !== 0">Паролите не съвпадат</span>
+    <button type="submit" class="color-button" [disabled]="registerForm.invalid ||registerForm.controls.password?.value !== registerForm.controls.confirm?.value">Регистрирай се</button>
     <a routerLink="/authentication/login">Вече имаш регистрация? Влез!</a>
   </form>
 </div>

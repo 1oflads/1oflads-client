@@ -1,4 +1,24 @@
+@import "../../../../../variables";
+
 .main-container {
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
+  text-align: center;
+  padding: 1em 0;
+
+
+  h1 {
+    color: $mainColor;
+    text-shadow: 0px 0px 3px #000000;
+  }
+
+  .see-all {
+    color: $mainColor;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px #000000;
+
+    &:hover {
+      color: $mainColorHover;
+    }
+  }
 }
 

@@ -1,3 +1,8 @@
-
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
+}
 
 /*# sourceMappingURL=variables.css.map */

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Challenge} from '../../../../core/service/models/challenge/Challenge';
 import {ChallengeService} from '../../../../core/service/ChallengeService';
 
@@ -10,11 +10,18 @@ import {ChallengeService} from '../../../../core/service/ChallengeService';
 export class ChallengeCreateComponent implements OnInit {
   public model: Challenge = new Challenge();
 
+  @ViewChild('startsOn', {read: null, static: true})
+  private startsOn: ElementRef;
+
+  @ViewChild('endsOn', {read: null, static: true})
+  private endsOn: ElementRef;
+
   constructor(
     private challengeService: ChallengeService
   ) { }
 
   ngOnInit() {
+    console.log(this.model);
   }
 
   create() {
@@ -23,6 +30,15 @@ export class ChallengeCreateComponent implements OnInit {
   }
 
   togglePermanent() {
-
+    if (this.startsOn.nativeElement.classList.contains('hidden')) {
+      this.startsOn.nativeElement.classList.remove('hidden');
+      this.endsOn.nativeElement.classList.remove('hidden');
+    } else {
+      this.startsOn.nativeElement.classList.add('hidden');
+      this.endsOn.nativeElement.classList.add('hidden');
+      this.model.startsOn = new Date();
+      this.model.endsOn = null;
+    }
+    console.log(this.model);
   }
 }

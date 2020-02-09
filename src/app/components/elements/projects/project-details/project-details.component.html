@@ -1,0 +1,9 @@
+<div class="main-container">
+  <h1>{{project.title}}</h1>
+  <img src="{{project.imageUrl}}" alt="">
+  <p>{{project.content}}</p>
+  <p>Автор: <a>{{project.author.name}}</a></p>
+  <div class="articles">
+    <lads-article-single *ngFor="let article of articles" [article]="article"></lads-article-single>
+  </div>
+</div>

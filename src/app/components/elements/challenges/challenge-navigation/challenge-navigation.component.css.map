@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../../../../variables.scss","challenge-navigation.component.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;ACDF;EACE;EACA;EACA,kBDGe;ECFf;EACA;EACA;EACA;;AAEA;EACE,ODNQ;ECOR;;AAEA;EACE,ODTW","file":"challenge-navigation.component.css"}
+{"version":3,"sourceRoot":"","sources":["../../../../../variables.scss","challenge-navigation.component.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;;ACFF;EACE;EACA;EACA,kBDIe;ECHf;EACA;EACA;EACA;;AAEA;EACE,ODLQ;ECMR;;AAEA;EACE,ODRW","file":"challenge-navigation.component.css"}

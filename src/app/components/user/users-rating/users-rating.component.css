@@ -2,6 +2,7 @@ body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
 }
 
 .main-container {
@@ -11,30 +12,6 @@ body {
 
 .heading {
   text-align: center;
-}
-
-.top-users {
-  margin-bottom: 1em;
-  border: 1px solid var(--main);
-  font-weight: bold;
-  padding: 1em;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.first {
-  font-size: 32px;
-  color: gold;
-}
-
-.second {
-  font-size: 24px;
-  color: silver;
-}
-
-.third {
-  font-size: 18px;
-  color: burlywood;
 }
 
 /*# sourceMappingURL=users-rating.component.css.map */

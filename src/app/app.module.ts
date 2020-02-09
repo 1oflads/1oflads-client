@@ -50,6 +50,19 @@ import { UserChallengeSingleComponent } from './components/user/user-challenge-s
 import {ChallengeService} from './core/service/ChallengeService';
 import { ChallengeNavigationComponent } from './components/elements/challenges/challenge-navigation/challenge-navigation.component';
 import { UsersRatingComponent } from './components/user/users-rating/users-rating.component';
+import {ErrorInterceptor} from './core/interceptors/ErrorInterceptor';
+import {ErrorService} from './core/service/ErrorService';
+import { UserTopThreeComponent } from './components/user/user-top-three/user-top-three.component';
+import { BandsMainComponent } from './components/elements/bands/bands-main/bands-main.component';
+import { BandCardComponent } from './components/elements/bands/band-card/band-card.component';
+import { ProjectsMainComponent } from './components/elements/projects/projects-main/projects-main.component';
+import { ProjectSingleComponent } from './components/elements/projects/project-single/project-single.component';
+import { AboutUsComponent } from './components/common/about-us/about-us.component';
+import {ArticleService} from './core/service/ArticleService';
+import { ArticleDetailsComponent } from './components/elements/articles/article-details/article-details.component';
+import { ProjectDetailsComponent } from './components/elements/projects/project-details/project-details.component';
+import {GroupService} from './core/service/GroupService';
+import {SphereService} from './core/service/SphereService';
 
 @NgModule({
   declarations: [
@@ -87,6 +100,14 @@ import { UsersRatingComponent } from './components/user/users-rating/users-ratin
     UserChallengeSingleComponent,
     ChallengeNavigationComponent,
     UsersRatingComponent,
+    UserTopThreeComponent,
+    BandsMainComponent,
+    BandCardComponent,
+    ProjectsMainComponent,
+    ProjectSingleComponent,
+    AboutUsComponent,
+    ArticleDetailsComponent,
+    ProjectDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -111,12 +132,20 @@ import { UsersRatingComponent } from './components/user/users-rating/users-ratin
     UserService,
     AuthenticationService,
     ChallengeService,
+    ArticleService,
+    GroupService,
+    SphereService,
+    ErrorService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: HeadersInterceptor,
       multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
+      multi: true
     }
-
   ],
   bootstrap: [AppComponent]
 })

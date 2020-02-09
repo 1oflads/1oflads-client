@@ -11,11 +11,11 @@
     <label>
       <input name="points" [(ngModel)]="model.points" type="number" placeholder="Точки">
     </label>
-    <label>
+    <label  #startsOn >
       Стартира на
-      <input name="startsOn" [(ngModel)]="model.startsOn" type="date">
+      <input name="startsOn"[(ngModel)]="model.startsOn" type="date">
     </label>
-    <label>
+    <label #endsOn>
       Приключва на
       <input name="endOn" [(ngModel)]="model.endsOn" type="date">
     </label>

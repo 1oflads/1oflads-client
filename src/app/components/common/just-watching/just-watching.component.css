@@ -2,6 +2,7 @@ body {
   --main: #DC143C;
   --dark: #C01134;
   --light: #FBE4E9;
+  --lightTransparent: rgb(249, 226, 231, 0.3);
 }
 
 .open-text {
@@ -37,7 +38,7 @@ h3 {
   background-color: #FEF6EC;
 }
 .kelesh img {
-  border: 1px solid #FC8B01;
+  border: 3px solid #FC8B01;
 }
 
 .umnik {
@@ -45,7 +46,7 @@ h3 {
   background-color: #E6E9FE;
 }
 .umnik img {
-  border: 1px solid #5B72FE;
+  border: 3px solid #5B72FE;
 }
 
 .anonimen {
@@ -53,7 +54,7 @@ h3 {
   background-color: #E7DCF4;
 }
 .anonimen img {
-  border: 1px solid #8B008B;
+  border: 3px solid #8B008B;
 }
 
 .simpatichen {
@@ -61,7 +62,7 @@ h3 {
   background-color: #FEEFEF;
 }
 .simpatichen img {
-  border: 1px solid #F87575;
+  border: 3px solid #F87575;
 }
 
 /*# sourceMappingURL=just-watching.component.css.map */
