@@ -58,10 +58,11 @@ export class UserProfileEditComponent implements OnInit {
   }
 
   toggleSphere(id: number) {
+    console.log(this.model);
     if (this.model.sphereIds.indexOf(id) === -1) {
       this.model.sphereIds.push(id);
     } else {
-      this.model.sphereIds.filter(sId => sId !== id);
+      this.model.sphereIds = this.model.sphereIds.filter(sId => sId !== id);
     }
   }
 }

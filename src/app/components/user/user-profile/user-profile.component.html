@@ -6,7 +6,20 @@
     <p>{{user.role.name}}</p>
   </div>
   <h4>Точки: {{user.points}}</h4>
+  <h4>Групи: </h4>
+  <ul>
+    <li *ngFor="let group of user.groups">
+      <a [routerLink]="['/group', group.id]">{{group.name}}</a>
+    </li>
+  </ul>
+  <h4>Сфери на интерес:</h4>
+  <ul>
+    <li *ngFor="let sphere of user.spheres">
+      <a [routerLink]="['/group', sphere.id]">{{sphere.name}}</a>
+    </li>
+  </ul>
   <button *ngIf="!id" class="color-button" routerLink="/user/profile/edit">Редакция
   </button>
+  <ngx-fullcalendar defaultView="month" [events]="events" [options]="options" (onDateClick)="onDateClick($event)"></ngx-fullcalendar>
 </div>
 

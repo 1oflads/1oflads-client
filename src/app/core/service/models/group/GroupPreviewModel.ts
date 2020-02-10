@@ -1,8 +1,8 @@
 export class GroupPreviewModel {
     constructor(
-        public id = null,
-        public name = '',
-        public avatarUrl = ''
+        public id: number = 0,
+        public name: string = '',
+        public avatarUrl: string = ''
     ) {
 
     }

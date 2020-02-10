@@ -7,6 +7,7 @@ import {UserProfileViewModel} from './models/user/UserProfileViewModel';
 import {RoleInfoViewModel} from './models/user/RoleInfoViewModel';
 import {ChallengeApplicationViewModel} from './models/challenge/ChallengeApplicationViewModel';
 import {UserRateViewModel} from './models/user/UserRateViewModel';
+import {GroupPreviewModel} from './models/group/GroupPreviewModel';
 
 export class UserService extends HttpService {
   public register(model: UserRegisterRequest): Observable<UserProfileViewModel> {
@@ -34,5 +35,9 @@ export class UserService extends HttpService {
 
   rating(): Observable<UserRateViewModel[]> {
     return this.http.get<UserRateViewModel[]>(Constants.API_ENDPOINT + Constants.User.PREFIX + '/' + Constants.User.RATING);
+  }
+
+  userGroups(id: number): Observable<GroupPreviewModel[]> {
+    return this.http.get<GroupPreviewModel[]>(Constants.API_ENDPOINT + Constants.User.PREFIX + '/' + id + '/' + Constants.Group.PREFIX);
   }
 }

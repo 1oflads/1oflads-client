@@ -25,10 +25,11 @@ export class ChallengesMainComponent implements OnInit {
     this.challengeService.getAllAccepted()
       .subscribe(res => {
         this.challenges = res;
-        this.userService.rating()
-          .subscribe(users => {
-            this.topUsers = users.splice(0, 3);
-          });
+      });
+
+    this.userService.rating()
+      .subscribe(users => {
+        this.topUsers = users.splice(0, 3);
       });
   }
 

@@ -7,6 +7,8 @@ import {ChallengeApplicationRequest} from './models/challenge/ChallengeApplicati
 import {ChallengeApplicationViewModel} from './models/challenge/ChallengeApplicationViewModel';
 import {RejectApplicationRequest} from './models/challenge/RejectApplicationRequest';
 import {UserRateViewModel} from './models/user/UserRateViewModel';
+import {GroupChallengePoll} from './models/challenge/GroupChallengePoll';
+import {GroupPollVoteRequest} from './models/challenge/GroupPollVoteRequest';
 
 export class ChallengeService extends HttpService {
   create(model: Challenge): Observable<any> {
@@ -53,4 +55,31 @@ export class ChallengeService extends HttpService {
       Constants.API_ENDPOINT + Constants.Challenge.PREFIX + '/' + Constants.Challenge.APPLICATIONS + '/' + id + '/' + Constants.Challenge.REJECT, model);
   }
 
+  initGroupPoll(challengeId: number, groupId: number): Observable<GroupChallengePoll> {
+    return this.http.post<GroupChallengePoll>(Constants.API_ENDPOINT + Constants.Challenge.PREFIX + '/' + challengeId + '/' + Constants.Challenge.GROUP_POLL + '/' + groupId, {});
+  }
+
+  voteGroupPoll(challengeId: number, groupId: number, groupPollVoteRequest: GroupPollVoteRequest): Observable<GroupChallengePoll> {
+    return this.http.patch<GroupChallengePoll>(Constants.API_ENDPOINT + Constants.Challenge.PREFIX + '/' + challengeId + '/' + Constants.Challenge.GROUP_POLL + '/' + groupId,
+      groupPollVoteRequest.answer);
+  }
+
+  challenges(id, status): Observable<ChallengeApplicationViewModel[]> {
+    return this.http.get<ChallengeApplicationViewModel[]>(Constants.API_ENDPOINT + Constants.Challenge.PREFIX + '/' + Constants.Challenge.APPLICATIONS + '/' + id + '/' + status);
+  }
+
+  getGroupPollResult(challengeId: number, groupId: number): Observable<GroupChallengePoll[]> {
+    return this.http.get<GroupChallengePoll[]>(Constants.API_ENDPOINT + Constants.Challenge.PREFIX + '/' + challengeId + '/' + Constants.Challenge.GROUP_POLL + '/' + groupId);
+  }
+
+  getTypeName(type: number) {
+    switch (type) {
+      case 0:
+        return 'Индивидуално';
+        break;
+      case 1:
+        return 'Групово';
+        break;
+    }
+  }
 }

@@ -8,6 +8,13 @@
     <label>
       <textarea [(ngModel)]="model.proofDescription" name="description" placeholder="Как го постигна?"></textarea>
     </label>
+    <label>
+      Група:
+      <select name="groupId" [(ngModel)]="model.groupId">
+        <option value="0" selected="selected">-- Не участвам групово --</option>
+        <option *ngFor="let group of groups" [value]="group.id">{{group.name}}</option>
+      </select>
+    </label>
     <button type="submit" class="color-button">Изпрати</button>
   </form>
 </div>

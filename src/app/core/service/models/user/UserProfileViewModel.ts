@@ -1,5 +1,6 @@
 import {RoleInfoViewModel} from './RoleInfoViewModel';
 import {SpherePreviewModel} from '../sphere/SpherePreviewModel';
+import {GroupPreviewModel} from '../group/GroupPreviewModel';
 
 export class UserProfileViewModel {
   constructor(
@@ -9,6 +10,7 @@ export class UserProfileViewModel {
     public avatarUrl: string = '',
     public points: number = 0,
     public role: RoleInfoViewModel = new RoleInfoViewModel(),
+    public groups: GroupPreviewModel[] = [],
     public spheres: SpherePreviewModel[] = []
   ) {
   }

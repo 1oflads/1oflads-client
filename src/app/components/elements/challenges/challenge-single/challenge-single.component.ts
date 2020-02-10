@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Challenge} from '../../../../core/service/models/challenge/Challenge';
+import {ChallengeService} from '../../../../core/service/ChallengeService';
 
 @Component({
   selector: 'lads-challenge-single',
@@ -10,7 +11,9 @@ export class ChallengeSingleComponent implements OnInit {
   @Input()
   public challenge: Challenge;
 
-  constructor() { }
+  constructor(
+    public challengeService: ChallengeService
+  ) { }
 
   ngOnInit() {
   }

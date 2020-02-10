@@ -20,6 +20,9 @@
     <li *ngIf="authenticationService.isCompletedProfile()">
       <a routerLink="/challenge/all">Предизвикателства</a>
     </li>
+    <li *ngIf="authenticationService.isCompletedProfile()">
+      <a routerLink="/groups">Групи</a>
+    </li>
     <li>
       <a routerLink="/user/rating" *ngIf="authenticationService.isCompletedProfile()">Класация</a>
     </li>

@@ -1,0 +1,33 @@
+<div class="main-container">
+  <label>
+    <select name="group" [(ngModel)]="groupId">
+      <option selected="selected" [value]="-1">--Изберете група--</option>
+      <option *ngFor="let group of groups" [value]="group.id">{{group.name}}</option>
+    </select>
+  </label>
+
+  <label>
+    <select (change)="renderOptions(groupId, $event)" name="group">
+      <option selected="selected">--Изберете опция--</option>
+      <option value="challenge">Предизвикателства</option>
+      <option value="calendar">Графици</option>
+    </select>
+  </label>
+
+  <div #challenges style="display: none">
+    <div class="checkboxes">
+      <label>
+        <input type="radio" (click)="getChallenges(1)" name="challengeType" value="1"> Приети
+      </label>
+      <label>
+        <input type="radio" name="challengeType" value="2" (click)="getChallenges(2)"> Изчакващи
+      </label>
+      <label>
+        <input type="radio" (click)="getChallenges(3)" name="challengeType" value="3"> Отказани
+      </label>
+      <label>
+        <input type="radio" (click)="getChallenges(4)" name="challengeType" value="4"> За гласуване
+      </label>
+    </div>
+  </div>
+</div>

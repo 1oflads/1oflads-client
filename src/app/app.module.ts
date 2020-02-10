@@ -63,6 +63,10 @@ import { ArticleDetailsComponent } from './components/elements/articles/article-
 import { ProjectDetailsComponent } from './components/elements/projects/project-details/project-details.component';
 import {GroupService} from './core/service/GroupService';
 import {SphereService} from './core/service/SphereService';
+import {NgxFullCalendarModule} from 'ngx-fullcalendar';
+import { ChallengesGroupsComponent } from './components/elements/challenges/challenges-groups/challenges-groups.component';
+import { ChallengeGroupSingleComponent } from './components/elements/challenges/challenge-group-single/challenge-group-single.component';
+import { BandOptionsComponent } from './components/elements/bands/band-options/band-options.component';
 
 @NgModule({
   declarations: [
@@ -108,6 +112,9 @@ import {SphereService} from './core/service/SphereService';
     AboutUsComponent,
     ArticleDetailsComponent,
     ProjectDetailsComponent,
+    ChallengesGroupsComponent,
+    ChallengeGroupSingleComponent,
+    BandOptionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -126,6 +133,7 @@ import {SphereService} from './core/service/SphereService';
     NgxEditorModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
+    NgxFullCalendarModule,
   ],
   providers: [
     ConfigurationService,

@@ -70,8 +70,8 @@ export class AuthenticationService extends HttpService {
     return localStorage.getItem(Constants.Authentication.TOKEN);
   }
 
-  getId() {
-    return localStorage.getItem(Constants.Authentication.ID);
+  getId(): number {
+    return +localStorage.getItem(Constants.Authentication.ID);
   }
 
   getTheme(): RoleTheme {

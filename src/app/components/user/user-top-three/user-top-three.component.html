@@ -1,4 +1,4 @@
-<div class="top-users">
+<div class="top-users" *ngIf="topUsers">
   <h5><i class="fas fa-trophy first"></i> {{topUsers[0].name}} - {{topUsers[0].points}} точки</h5>
   <h5><i class="fas fa-trophy second"></i> {{topUsers[1].name}} - {{topUsers[1].points}} точки</h5>
   <h5><i class="fas fa-trophy third"></i> {{topUsers[2].name}} - {{topUsers[2].points}} точки</h5>

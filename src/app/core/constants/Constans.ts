@@ -17,6 +17,8 @@ export class Constants {
     public static ACCEPTED_APL = 1;
     public static WAITING_APL = 0;
     public static REJECTED_APL = 2;
+    public static GROUP_POLL = 'groupPoll';
+    public static GROUP_POLL_RESULT = 'groupPollResult';
   };
   static Authentication = class {
     public static LOGIN = 'token';

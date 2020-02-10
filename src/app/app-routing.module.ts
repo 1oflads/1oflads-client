@@ -22,6 +22,8 @@ import {AdminGuard} from './core/guards/AdminGuard';
 import {AboutUsComponent} from './components/common/about-us/about-us.component';
 import {ArticleDetailsComponent} from './components/elements/articles/article-details/article-details.component';
 import {ProjectDetailsComponent} from './components/elements/projects/project-details/project-details.component';
+import {ChallengesGroupsComponent} from './components/elements/challenges/challenges-groups/challenges-groups.component';
+import {BandOptionsComponent} from './components/elements/bands/band-options/band-options.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,8 @@ const routes: Routes = [
   {path: 'challenge/achieve/:id', component: ChallengeAchieveComponent, canActivate: [AuthenticationGuard]},
   {path: 'challenge/requests', component: ChallengeRequestsMainComponent, canActivate: [AdminGuard]},
   {path: 'challenge/applications', component: ChallengeApplicationsMainComponent, canActivate: [AdminGuard]},
+  {path: 'challenge/groups', component: ChallengesGroupsComponent},
+  {path: 'groups', component: BandOptionsComponent},
   {path: 'group/create', component: BandCreateComponent, canActivate: [AdminGuard]},
   {path: 'group/:id', component: BandPageComponent},
   {path: 'group/:id/edit', component: BandPageEditComponent, canActivate: [AuthenticationGuard]},
