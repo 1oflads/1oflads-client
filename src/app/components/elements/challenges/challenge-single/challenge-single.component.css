@@ -1,0 +1,36 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.main-container {
+  margin: 1.5em auto;
+  padding: 1em;
+  border-radius: 8px;
+  width: 98%;
+  background-color: var(--main);
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  color: #000000;
+}
+
+.line {
+  width: 10%;
+  height: 0.5px;
+  background-color: #000000;
+  margin: 0.5em auto;
+}
+
+h3 {
+  margin-bottom: 1em;
+}
+
+:host ::ng-deep ul, :host ::ng-deep ol {
+  margin-left: 1em;
+}
+
+/*# sourceMappingURL=challenge-single.component.css.map */

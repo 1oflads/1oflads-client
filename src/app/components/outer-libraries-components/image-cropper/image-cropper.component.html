@@ -1,0 +1,9 @@
+<image-cropper #cropper
+               class="cropper"
+               [imageChangedEvent]="imageChangedEvent"
+               [maintainAspectRatio]="true"
+               [aspectRatio]="3.5 / 4"
+               [resizeToWidth]="500"
+               (imageCropped)="onImageCropped.emit($event)"
+>
+</image-cropper>

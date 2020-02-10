@@ -1,0 +1,66 @@
+.main-container {
+  text-align: center;
+  margin: 2em auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #DC143C;
+}
+
+input, textarea {
+  background-color: transparent;
+  padding: 0.5em 0.5em 0.5em 1.8em;
+  width: 20%;
+  border: 1px solid #999999;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #DC143C;
+}
+
+textarea {
+  padding: 0.5em;
+  height: 7em;
+  width: 30%;
+}
+
+i {
+  margin-right: -1.5em;
+  z-index: 1;
+}
+
+button {
+  margin: 1em auto 1em auto;
+}
+
+a {
+  color: #DC143C;
+}
+
+a:hover {
+  color: #C01134;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.checkboxes .checkbox {
+  width: unset;
+  margin-left: 1em;
+}
+
+/*# sourceMappingURL=authentication-forms.css.map */
+
+/*# sourceMappingURL=challenge-achieve.component.css.map */

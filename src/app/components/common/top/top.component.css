@@ -1,0 +1,27 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.main-container {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  margin-top: 2.5em;
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--main);
+  margin-right: 2em;
+}
+
+/*# sourceMappingURL=top.component.css.map */

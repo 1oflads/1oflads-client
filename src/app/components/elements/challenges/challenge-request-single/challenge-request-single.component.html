@@ -1,0 +1,12 @@
+<div class="main-container">
+  <h1>{{challenge.name}}</h1>
+  <p>{{challenge.description}}</p>
+  <div class="buttons">
+    <button class="white-button" (click)="reject(challenge.id)">
+      Откажи
+    </button>
+    <button class="white-button" (click)="accept(challenge.id)">
+      Одобри
+    </button>
+  </div>
+</div>

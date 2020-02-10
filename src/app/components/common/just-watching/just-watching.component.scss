@@ -1,0 +1,60 @@
+@import "../../../../variables";
+
+.open-text {
+  padding: 2em;
+}
+
+h1 {
+  color: #DC143C;
+  margin-bottom: 1em;
+}
+
+.role {
+  padding: 2em;
+  img {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+  }
+  display: flex;
+}
+
+.umnik, .simpatichen {
+  text-align: right;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.kelesh {
+  img {
+    border: 1px solid $keleshMainColor;
+  }
+  color: $keleshMainColor;
+  background-color: $keleshLightColor;
+}
+
+.umnik {
+  img {
+    border: 1px solid $umnikMainColor;
+  }
+  color: $umnikMainColor;
+  background-color: $umnikLightColor;
+}
+
+.anonimen {
+  img {
+    border: 1px solid $anonimenMainColor;
+  }
+  color: $anonimenMainColor;
+  background-color: $anonimenLightColor;
+}
+
+.simpatichen {
+  img {
+    border: 1px solid $simpatichenMainColor;
+  }
+  color: $simpatichenMainColor;
+  background-color: $simpatichenLightColor;
+}

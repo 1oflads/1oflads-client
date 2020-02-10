@@ -1,0 +1,16 @@
+<div class="main-container">
+  <h1>Вход</h1>
+  <form (submit)="login()">
+    <label>
+        <i class="fas fa-envelope"></i>
+        <input [(ngModel)]="model.username" name="email" type="text" placeholder="Имейл адрес">
+    </label>
+    <label>
+        <i class="fas fa-key"></i>
+        <input [(ngModel)]="model.password" name="password" type="password" placeholder="Парола">
+    </label>
+    <button type="submit" class="color-button">Вход</button>
+    <a href="">Все още нямаш регистрация? Регистрирай се!</a>
+    <a href="">Забравена парола?</a>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.main-container {
+  text-align: center;
+  padding: 2em;
+}
+
+h1 {
+  color: var(--main);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=challenges-all.component.css.map */

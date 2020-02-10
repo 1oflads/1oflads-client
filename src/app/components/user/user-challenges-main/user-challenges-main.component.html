@@ -1,0 +1,16 @@
+<div class="main-container">
+  <lads-challenge-navigation></lads-challenge-navigation>
+  <label>
+    <input name="status" (click)="getApplications(1)" type="radio">
+    Одобрени
+  </label>
+  <label>
+    <input name="status" (click)="getApplications(0)" type="radio">
+    Изчакващи
+  </label>
+  <label>
+    <input name="status" (click)="getApplications(2)" type="radio">
+    Отказани
+  </label>
+  <lads-user-challenge-single *ngFor="let application of applications" [challenge]="application"></lads-user-challenge-single>
+</div>

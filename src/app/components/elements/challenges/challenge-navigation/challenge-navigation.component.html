@@ -1,0 +1,9 @@
+<nav>
+  <div class="links">
+    <a routerLink="/challenge/all">Всички</a>
+    <a routerLink="/user/challenges">Мои</a>
+    <a routerLink="/challenge/create">Създай</a>
+    <a routerLink="/challenge/applications" *ngIf="authenticationService.isAdmin()">Изпълнени</a>
+    <a routerLink="/challenge/requests" *ngIf="authenticationService.isAdmin()">Предложения</a>
+  </div>
+</nav>

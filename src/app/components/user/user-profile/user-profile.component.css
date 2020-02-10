@@ -1,0 +1,34 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.main-container {
+  text-align: center;
+}
+.main-container h1 {
+  color: var(--main);
+}
+.main-container img {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  border: 1px solid var(--main);
+}
+.main-container .info {
+  background-color: #999999;
+  width: 25%;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid var(--main);
+  text-align: left;
+  font-weight: bold;
+}
+
+button {
+  margin-bottom: 1em;
+}
+
+/*# sourceMappingURL=user-profile.component.css.map */

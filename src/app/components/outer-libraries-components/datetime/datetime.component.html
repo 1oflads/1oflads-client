@@ -1,0 +1,7 @@
+<input id="{{id}}"
+       name="{{id}}"
+       [owlDateTime]="dt"
+       [owlDateTimeTrigger]="dt"
+       placeholder="{{placeholder}}"
+       (dateTimeChange)="dateChangeEmitter.emit($event)">
+<owl-date-time #dt></owl-date-time>

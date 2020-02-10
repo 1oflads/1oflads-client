@@ -1,0 +1,27 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+::ng-deep .carousel {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  ::ng-deep .carousel {
+    width: 100%;
+  }
+}
+
+::ng-deep.slick-prev:before, ::ng-deep.slick-next:before {
+  color: #000000;
+  font-size: 30px;
+}
+
+::ng-deep.slick-prev {
+  left: -34px;
+}
+
+/*# sourceMappingURL=challenges-main.component.css.map */

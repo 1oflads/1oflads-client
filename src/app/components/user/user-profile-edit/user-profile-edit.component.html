@@ -1,0 +1,34 @@
+<div class="main-container">
+  <h1>Редакция на профила</h1>
+  <form (submit)="edit()">
+    <h2 *ngIf="roles.length">Група</h2>
+    <p *ngIf="roles.length">Имай предвид, че можеш да промениш групата си само веднъж годишно, но не можеш да продължиш в сайта ако не се
+      присъединиш към някоя</p>
+    <div class="checkboxes">
+      <label *ngFor="let role of roles">
+        <input [value]="role.id" [(ngModel)]="model.roleId" name="role" class="checkbox" type="radio">
+        {{role.name}}
+      </label>
+    </div>
+    <h2>Информация</h2>
+    <label>
+      <i class="fas fa-user"></i>
+      <input [(ngModel)]="model.name" name="name" type="text" placeholder="Име">
+    </label>
+    <label>
+      <i class="fas fa-key"></i>
+      <input [(ngModel)]="model.password" name="password" type="password" placeholder="Парола">
+    </label>
+    <label>
+      <i class="fas fa-key"></i>
+      <input [(ngModel)]="model.confirm" name="confirm" type="password" placeholder="Повтори паролата">
+    </label>
+    <label>
+      <textarea [(ngModel)]="model.description" name="description" placeholder="Описание на профила"></textarea>
+    </label>
+    <label>Профилна снимка
+      <input (change)="fileChanged($event)" name="avatar" placeholder="Профилна снимка" type="file">
+    </label>
+    <button type="submit" class="color-button">Запази</button>
+  </form>
+</div>

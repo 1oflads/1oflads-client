@@ -1,0 +1,42 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.main-container {
+  width: 100%;
+  height: 20em;
+  background: linear-gradient(rgba(50, 51, 51, 0.75), rgba(50, 51, 51, 0.75)), url("/assets/images/background/music-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: unset;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 2.5em;
+}
+.heading h1 {
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+}
+
+.roles {
+  margin-top: 3.5em;
+  text-align: center;
+}
+.roles ul {
+  display: flex;
+  justify-content: center;
+}
+.roles ul li {
+  margin-right: 2em;
+  text-transform: uppercase;
+  color: var(--main);
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #000000;
+}
+
+/*# sourceMappingURL=welcome-header.component.css.map */

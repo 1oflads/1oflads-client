@@ -1,0 +1,14 @@
+.main-container {
+  margin: 0.5em auto;
+}
+.main-container img {
+  width: 30%;
+  height: 20%;
+  margin-bottom: 1em;
+}
+
+button {
+  margin: 0 0.5em;
+}
+
+/*# sourceMappingURL=challenge-request-single.component.css.map */

@@ -1,0 +1,21 @@
+@import "../../../../variables";
+
+.main-container {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  margin-top: 2.5em;
+}
+
+ul {
+  display: flex;
+  li {
+    font-weight: bold;
+    font-size: 24px;
+    color: $mainColor;
+    margin-right: 2em;
+  }
+}

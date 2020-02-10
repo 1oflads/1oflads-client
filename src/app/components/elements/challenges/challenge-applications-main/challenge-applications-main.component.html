@@ -1,0 +1,7 @@
+<div class="main-container">
+  <lads-challenge-navigation></lads-challenge-navigation>
+  <lads-challenge-application-single
+    *ngFor="let application of applications"
+    [application]="application" [accept]="accept.bind(this)" [reject]="reject.bind(this)">
+  </lads-challenge-application-single>
+</div>

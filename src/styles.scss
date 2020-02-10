@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic');
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Neucha', cursive;
+}
+
+body {
+  position: relative;
+
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 2px;
+    width: 7px;
+    background-color: #E9EBEC;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $mainColorHover;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+.white-button {
+  all: unset;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  width: 10em;
+  padding: 0.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #E9EBEC;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.color-button {
+  all: unset;
+  color: #ffffff;
+  background-color: $mainColor;
+  text-transform: uppercase;
+  width: 10em;
+  padding: 0.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: $mainColorHover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+

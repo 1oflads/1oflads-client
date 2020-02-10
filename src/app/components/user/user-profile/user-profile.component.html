@@ -1,0 +1,12 @@
+<div class="main-container">
+  <h1>Профил</h1>
+  <img *ngIf="user.avatarUrl" src="{{user.avatarUrl}}" alt="">
+  <div class="info">
+    <p>Име: {{user.name}}</p>
+    <p>{{user.role.name}}</p>
+  </div>
+  <h4>Точки: {{user.points}}</h4>
+  <button *ngIf="!id" class="color-button" routerLink="/user/profile/edit">Редакция
+  </button>
+</div>
+

@@ -1,0 +1,66 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.open-text {
+  padding: 2em;
+}
+
+h1 {
+  color: #DC143C;
+  margin-bottom: 1em;
+}
+
+.role {
+  padding: 2em;
+  display: flex;
+}
+.role img {
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+}
+
+.umnik, .simpatichen {
+  text-align: right;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.kelesh {
+  color: #FC8B01;
+  background-color: #FEF6EC;
+}
+.kelesh img {
+  border: 1px solid #FC8B01;
+}
+
+.umnik {
+  color: #5B72FE;
+  background-color: #E6E9FE;
+}
+.umnik img {
+  border: 1px solid #5B72FE;
+}
+
+.anonimen {
+  color: #8B008B;
+  background-color: #E7DCF4;
+}
+.anonimen img {
+  border: 1px solid #8B008B;
+}
+
+.simpatichen {
+  color: #F87575;
+  background-color: #FEEFEF;
+}
+.simpatichen img {
+  border: 1px solid #F87575;
+}
+
+/*# sourceMappingURL=just-watching.component.css.map */

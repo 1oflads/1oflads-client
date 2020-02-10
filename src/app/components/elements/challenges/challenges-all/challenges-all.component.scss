@@ -1,0 +1,10 @@
+@import "../../../../../variables";
+
+.main-container {
+  text-align: center;
+  padding: 2em;
+}
+h1 {
+  color: $mainColor;
+  font-weight: bold;
+}

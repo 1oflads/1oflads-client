@@ -1,0 +1,15 @@
+<div class="main-container" *ngIf="application">
+  <h1>{{application.challenge.name}}</h1>
+  <p>{{application.completedOn | date}}</p>
+  <p>{{application.proofDescription}}</p>
+  <img src="{{application.proofUrl}}">
+  <textarea name="reason" [(ngModel)]="model.description" placeholder="Причина за отказ"></textarea>
+  <div class="buttons">
+    <button class="white-button" (click)="reject(application.id, model)">
+      Откажи
+    </button>
+    <button class="white-button" (click)="accept(application.id)">
+      Одобри
+    </button>
+  </div>
+</div>

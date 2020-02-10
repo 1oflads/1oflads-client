@@ -1,0 +1,25 @@
+<nav>
+  <ul class="guest" *ngIf="authenticationService.isGuest()">
+    <li>
+      <a routerLink="/authentication/login">Вход</a></li>
+    <li>
+      <a routerLink="/user/register">Регистрация</a>
+    </li>
+    <li>
+      <a routerLink="/just-watching">...Само зяпам</a>
+    </li>
+  </ul>
+  <ul class="user" *ngIf="authenticationService.isAuthenticated()">
+    <li *ngIf="authenticationService.isCompletedProfile()">
+      <a routerLink="/user/profile">Профил</a></li>
+    <li *ngIf="authenticationService.isCompletedProfile()">
+      <a routerLink="/challenge/all">Предизвикателства</a>
+    </li>
+    <li>
+      <a routerLink="/user/rating">Класация</a>
+    </li>
+    <li>
+      <a (click)="authenticationService.logout()" routerLink="/">Изход</a>
+    </li>
+  </ul>
+</nav>

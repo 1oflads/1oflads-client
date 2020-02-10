@@ -1,0 +1,13 @@
+<div class="main-container">
+  <lads-challenge-navigation></lads-challenge-navigation>
+  <h1>Супер! Сега остава да ни докажеш, че си изпълнил предизвикателството.</h1>
+  <form (submit)="apply()">
+    <label>Снимка
+      <input [(ngModel)]="model.proof" (change)="fileChanged($event)" name="proof" placeholder="Cнимка" type="file">
+    </label>
+    <label>
+      <textarea [(ngModel)]="model.proofDescription" name="description" placeholder="Как го постигна?"></textarea>
+    </label>
+    <button type="submit" class="color-button">Изпрати</button>
+  </form>
+</div>

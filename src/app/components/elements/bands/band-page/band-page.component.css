@@ -1,0 +1,14 @@
+.info-container {
+  width: 70%;
+  margin: 5em auto;
+  border-radius: 8px;
+  text-align: center;
+  padding: 3em;
+}
+.info-container img {
+  width: 40%;
+  height: 30%;
+  margin: 1em 0;
+}
+
+/*# sourceMappingURL=band-page.component.css.map */

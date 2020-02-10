@@ -1,0 +1,23 @@
+<div class="main-container">
+  <h1>Регистрация</h1>
+  <form (submit)="register()">
+    <label>
+      <i class="fas fa-envelope"></i>
+      <input [(ngModel)]="model.username" name="email" type="text" placeholder="Имейл адрес">
+    </label>
+    <label>
+      <i class="fas fa-user-alt"></i>
+      <input [(ngModel)]="model.name" name="name" type="text" placeholder="Име">
+    </label>
+    <label>
+      <i class="fas fa-key"></i>
+      <input [(ngModel)]="model.password" name="password" type="password" placeholder="Парола">
+    </label>
+    <label>
+      <i class="fas fa-key"></i>
+      <input [(ngModel)]="model.confirm" name="confirm" type="password" placeholder="Повторете паролата">
+    </label>
+    <button type="submit" class="color-button">Регистрирай се</button>
+    <a routerLink="/authentication/login">Вече имаш регистрация? Влез!</a>
+  </form>
+</div>

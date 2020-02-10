@@ -1,0 +1,69 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+footer {
+  background-color: var(--main);
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+@media (min-width: 1050px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em 4em 1em;
+  }
+}
+@media (max-width: 1050px) {
+  footer {
+    flex-direction: column;
+    padding: 0 2em 1em 2em;
+  }
+}
+footer .info {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, "sans-serif";
+}
+@media (min-width: 1050px) {
+  footer .info {
+    width: 50%;
+  }
+}
+@media (max-width: 1050px) {
+  footer .info {
+    width: 100%;
+  }
+}
+footer .info .logo {
+  width: 8.7em;
+  height: 2.7em;
+}
+@media (max-width: 1050px) {
+  footer .info .logo {
+    margin-top: 1em;
+    font-size: 1.6em;
+  }
+}
+footer .info .address {
+  width: 80%;
+}
+footer .info li {
+  margin-bottom: 1em !important;
+}
+footer .info li i {
+  font-size: 16px;
+}
+
+#conditions, #privacy, #tel, #mail {
+  color: #000000 !important;
+}
+#conditions:hover, #privacy:hover, #tel:hover, #mail:hover {
+  text-decoration: underline !important;
+}
+
+/*# sourceMappingURL=footer.component.css.map */

@@ -1,0 +1,18 @@
+@import "../../../../styles/authentication-forms";
+@import "../../../../../variables";
+
+ng-multiselect-dropdown {
+  width: 30%;
+  margin: 0 auto 1em auto;
+}
+
+::ng-deep .multiselect-dropdown .dropdown-btn .selected-item {
+  background: $mainColor !important;
+  border: 1px solid $mainColor !important;
+}
+
+//::ng-deep.multiselect-item-checkbox:before {
+//  div {
+//    color: $mainColor !important;
+//  }
+//}

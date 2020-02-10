@@ -1,0 +1,20 @@
+@import "../../../../../variables";
+
+nav {
+  text-align: center;
+  width: 70%;
+  background-color: $mainColorLight;
+  height: 3em;
+  margin: 0 auto;
+  padding-top: 0.7em;
+  border: 1px solid $mainColorHover;
+
+  a {
+    color: $mainColor;
+    margin: 0 1em;
+
+    &:hover {
+      color: $mainColorHover;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<div class="main-container">
+  <lads-challenge-navigation></lads-challenge-navigation>
+  <h1>Създай предизвикателство</h1>
+  <form (submit)="create()">
+    <label>
+      <input name="name" [(ngModel)]="model.name" type="text" placeholder="Име на предизвикателството">
+    </label>
+    <label>
+      <textarea name="description" [(ngModel)]="model.description" placeholder="Описание на предизвикателството"></textarea>
+    </label>
+    <label>
+      <input name="points" [(ngModel)]="model.points" type="number" placeholder="Точки">
+    </label>
+    <label>
+      Стартира на
+      <input name="startsOn" [(ngModel)]="model.startsOn" type="date">
+    </label>
+    <label>
+      Приключва на
+      <input name="endOn" [(ngModel)]="model.endsOn" type="date">
+    </label>
+    <label>
+      <input (change)="togglePermanent()" class="checkbox" type="checkbox"> Предизвикателството е безсрочно
+    </label>
+    <button class="color-button">Създай предизвикателство</button>
+  </form>
+</div>

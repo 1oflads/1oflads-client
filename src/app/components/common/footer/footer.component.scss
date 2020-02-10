@@ -1,0 +1,70 @@
+@import "../../../../variables";
+
+footer {
+  @media (min-width: 1050px) {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em 4em 1em;
+  }
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    padding: 0 2em 1em 2em;
+  }
+
+  background-color: $mainColor;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  .info {
+    @media (min-width: 1050px) {
+      width: 50%;
+    }
+
+    @media (max-width: 1050px) {
+      width: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, 'sans-serif';
+
+    .logo {
+
+      width: 8.7em;
+      height: 2.7em;
+
+      @media(max-width: 1050px) {
+        margin-top: 1em;
+        font-size: 1.6em;
+      }
+    }
+
+    .address {
+      width: 80%;
+    }
+
+    li {
+      margin-bottom: 1em !important;
+
+      i {
+        font-size: 16px;
+      }
+    }
+
+  }
+}
+
+#conditions, #privacy, #tel, #mail {
+  color: #000000 !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+
+

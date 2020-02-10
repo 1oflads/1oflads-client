@@ -1,0 +1,39 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+.main-container {
+  margin: 2em 3em;
+  color: var(--main);
+}
+
+.heading {
+  text-align: center;
+}
+
+.top-users {
+  text-align: left;
+  margin-bottom: 1em;
+  border: 1px solid var(--main);
+  font-weight: bold;
+  padding: 1em;
+}
+
+.first {
+  font-size: 32px;
+  color: gold;
+}
+
+.second {
+  font-size: 24px;
+  color: silver;
+}
+
+.third {
+  font-size: 18px;
+  color: burlywood;
+}
+
+/*# sourceMappingURL=users-rating.component.css.map */

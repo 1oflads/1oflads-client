@@ -1,0 +1,21 @@
+@import "../../../../../variables";
+
+::ng-deep .carousel {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+::ng-deep.slick-prev:before, ::ng-deep.slick-next:before {
+  color: #000000;
+  font-size: 30px;
+}
+
+::ng-deep.slick-prev {
+  left: -34px;
+}
+

@@ -1,0 +1,13 @@
+<div class="main-container" *ngIf="topUsers.length && users.length">
+  <div class="heading">
+    <h1>Класация</h1>
+  </div>
+  <div class="top-users">
+    <h1><i class="fas fa-trophy first"></i> {{topUsers[0].name}} - {{topUsers[0].points}} точки</h1>
+    <h2><i class="fas fa-trophy second"></i> {{topUsers[1].name}} - {{topUsers[1].points}} точки</h2>
+    <h3><i class="fas fa-trophy third"></i> {{topUsers[2].name}} - {{topUsers[2].points}} точки</h3>
+  </div>
+  <div class="other-users">
+    <p *ngFor="let user of users; let i = index">{{i + 4}}. {{user.name}} - {{user.points}}</p>
+  </div>
+</div>

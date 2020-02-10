@@ -1,0 +1,24 @@
+body {
+  --main: #DC143C;
+  --dark: #C01134;
+  --light: #FBE4E9;
+}
+
+$mainColor: var(--main);
+$mainColorHover: var(--dark);
+$mainColorLight: var(--light);
+
+$keleshMainColor: #FC8B01;
+$umnikMainColor: #5B72FE;
+$anonimenMainColor: #8B008B;
+$simpatichenMainColor: #F87575;
+
+$keleshLightColor: #FEF6EC;
+$umnikLightColor: #E6E9FE;
+$anonimenLightColor: #E7DCF4;
+$simpatichenLightColor: #FEEFEF;
+
+$keleshDarkColor: #E37D00;
+$umnikDarkColor: #4B5FD4;
+$anonimenDarkColor: #790079;
+$simpatichenDarkColor: #DA6666;
