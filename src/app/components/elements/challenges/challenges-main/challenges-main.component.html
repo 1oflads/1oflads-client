@@ -1,4 +1,4 @@
-<lads-info-carousel [isStatic]="true" [config]="configurationService.challengeCarouselConfiguration()">
+<lads-info-carousel [config]="configurationService.challengeCarouselConfiguration()">
   <div #container class="slide" *ngFor="let challenge of challenges">
     <lads-challenge-single [challenge]="challenge"></lads-challenge-single>
   </div>

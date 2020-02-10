@@ -16,6 +16,7 @@ h1 {
 .role {
   padding: 2em;
   display: flex;
+  justify-content: space-between;
 }
 .role img {
   height: 8em;

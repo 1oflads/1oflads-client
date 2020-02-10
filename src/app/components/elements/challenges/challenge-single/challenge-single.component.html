@@ -4,7 +4,7 @@
   <p class="line"></p>
   <h3>{{challenge.points}} точки</h3>
   <h5 *ngIf="challenge.startsOn">{{challenge.startsOn | date}} - {{challenge.endsOn | date}}</h5>
-  <button class="white-button" [routerLink]="['/challenge/achieve', challenge.id]" >
+  <button class="color-button" [routerLink]="['/challenge/achieve', challenge.id]" >
     Изпълни
   </button>
 </div>

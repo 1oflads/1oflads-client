@@ -9,9 +9,10 @@ body {
   padding: 1em;
   border-radius: 8px;
   width: 98%;
-  background-color: var(--main);
-  color: #ffffff;
+  background-color: var(--light);
   text-align: center;
+  border: 1px solid var(--main);
+  color: var(--main);
 }
 
 h1 {

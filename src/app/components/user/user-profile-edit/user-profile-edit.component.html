@@ -5,7 +5,7 @@
     <p *ngIf="roles.length">Имай предвид, че можеш да промениш групата си само веднъж годишно, но не можеш да продължиш в сайта ако не се
       присъединиш към някоя</p>
     <div class="checkboxes">
-      <label *ngFor="let role of roles">
+      <label *ngFor="let role of roles" [style.color]="role.theme.mainColor">
         <input [value]="role.id" [(ngModel)]="model.roleId" name="role" class="checkbox" type="radio">
         {{role.name}}
       </label>

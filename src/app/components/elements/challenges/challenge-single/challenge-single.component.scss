@@ -5,9 +5,10 @@
   padding: 1em;
   border-radius: 8px;
   width: 98%;
-  background-color: $mainColor;
-  color: #ffffff;
+  background-color: $mainColorLight;
   text-align: center;
+  border: 1px solid $mainColor;
+  color: $mainColor;
 }
 
 h1 {

@@ -14,11 +14,12 @@ body {
 }
 
 .top-users {
-  text-align: left;
   margin-bottom: 1em;
   border: 1px solid var(--main);
   font-weight: bold;
   padding: 1em;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .first {

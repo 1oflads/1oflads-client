@@ -5,10 +5,10 @@
   <img src="{{application.proofUrl}}">
   <textarea name="reason" [(ngModel)]="model.description" placeholder="Причина за отказ"></textarea>
   <div class="buttons">
-    <button class="white-button" (click)="reject(application.id, model)">
+    <button class="color-button" (click)="reject(application.id, model)">
       Откажи
     </button>
-    <button class="white-button" (click)="accept(application.id)">
+    <button class="color-button" (click)="accept(application.id)">
       Одобри
     </button>
   </div>
