@@ -10,8 +10,8 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent implements OnInit {
-  private user: UserProfileViewModel = new UserProfileViewModel();
-  private id = '';
+  public user: UserProfileViewModel = new UserProfileViewModel();
+  public id = '';
 
   constructor(
     private userService: UserService,

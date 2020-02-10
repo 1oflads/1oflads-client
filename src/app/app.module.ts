@@ -41,7 +41,7 @@ import { BandPageEditComponent } from './components/elements/bands/band-page-edi
 import { JustWatchingComponent } from './components/common/just-watching/just-watching.component';
 import { ChallengeRequestsMainComponent } from './components/elements/challenges/challenge-requests-main/challenge-requests-main.component';
 import { ChallengeRequestSingleComponent } from './components/elements/challenges/challenge-request-single/challenge-request-single.component';
-import {NgMultiSelectDropDownModule} from 'ng-multiselect-dropdown';
+// import {NgMultiSelectDropDownModule} from 'ng-multiselect-dropdown';
 import { BandCreateComponent } from './components/elements/bands/band-create/band-create.component';
 import { ChallengeApplicationsMainComponent } from './components/elements/challenges/challenge-applications-main/challenge-applications-main.component';
 import { ChallengeApplicationSingleComponent } from './components/elements/challenges/challenge-application-single/challenge-application-single.component';
@@ -98,7 +98,7 @@ import { UsersRatingComponent } from './components/user/users-rating/users-ratin
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDS9q2bfOep2OlZCFWgW9KaCsIHopKo354'
     }),
-    NgMultiSelectDropDownModule.forRoot(),
+    // NgMultiSelectDropDownModule.forRoot(),
     ToastrModule.forRoot(),
     HttpClientModule,
     ImageCropperModule,

@@ -9,7 +9,7 @@ import {AuthenticationService} from '../../../../core/service/AuthenticationServ
 export class ChallengeNavigationComponent implements OnInit {
 
   constructor(
-    private authenticationService: AuthenticationService
+    public authenticationService: AuthenticationService
   ) { }
 
   ngOnInit() {
